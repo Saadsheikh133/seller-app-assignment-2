@@ -4,7 +4,6 @@ import { BsGearWideConnected, BsSpeedometer } from "react-icons/bs";
 import { AiOutlineHeart } from "react-icons/ai";
 
 const CarsDetails = ({ car }) => {
-    console.log(car)
     const { img, carName, fuel, gearSystem, releaseYear, rent, seat, litter } = car;
     return (
         <div>
@@ -28,7 +27,7 @@ const CarsDetails = ({ car }) => {
                     </div>
                     <div className="card-actions justify-end items-center">
                         <p> <span className="text-2xl font-semibold">${rent}</span> / month</p>
-                        <div className="bg-blue-100 rounded-xl p-2">
+                        <div className="bg-blue-100 rounded-xl p-2 cursor-pointer">
                             <AiOutlineHeart className="text-sky-400" size={26}></AiOutlineHeart>
                         </div>
                         <button className="bg-blue-500 text-white py-2 px-4 rounded-xl ml-3">Rent Now</button>
